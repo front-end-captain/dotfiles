@@ -1,0 +1,501 @@
+{
+  "window.title": "${dirty}${activeEditorShort}${separator}${remoteName}${rootPath}${separator}",
+  "terminal.integrated.fontSize": 13,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.3,
+  // "editor.fontWeight": "600",
+  // "editor.fontFamily": "Hasklug Nerd Font",
+  "editor.fontFamily": "CodeNewRoman Nerd Font",
+  // "editor.fontFamily": "IntoneMono Nerd Font",
+  // "editor.fontFamily": "ComicShannsMono Nerd Font",
+  // "editor.fontFamily": "SauceCodePro NF",
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.languageServer": "Pylance",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.easymotion": true,
+  "vim.foldfix": true,
+  "vim.surround": true,
+  // "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.cursorStylePerMode.insert": "underline",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.duration": 600,
+  "vim.handleKeys": {
+    // "<C-a>": false,
+    // "<C-f>": false,
+    // "<C-w>": false,
+    // "<C-v>": false,
+    // "<C-b>": false,
+    // "<C-x>": false,
+    // "<C-k>": false,
+    // "<C-l>": false,
+    // "<C-j>": false,
+    "<Up>": false,
+    "<Down>": false,
+    "<Left>": false,
+    "<Right>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    // {
+    //   "before": ["C-c"],
+    //   "after": ["<Esc>"]
+    // }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "L"
+      ],
+      "after": [
+        "d",
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "H"
+      ],
+      "after": [
+        "d",
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "L"
+      ],
+      "after": [
+        "c",
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "H"
+      ],
+      "after": [
+        "c",
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "b"
+      ],
+      "commands": [
+        "editor.action.blockComment"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "L"
+      ],
+      "after": [
+        "d",
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "H"
+      ],
+      "after": [
+        "d",
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "L"
+      ],
+      "after": [
+        "c",
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "H"
+      ],
+      "after": [
+        "c",
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "y",
+        "L"
+      ],
+      "after": [
+        "y",
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "y",
+        "H"
+      ],
+      "after": [
+        "y",
+        "^"
+      ]
+    },
+    // {
+    //   "before": [
+    //     "y",
+    //   ],
+    //   "after": [
+    //     "y",
+    //     "i",
+    //     "w"
+    //   ]
+    // },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "workbench.files.action.focusFilesExplorer"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "b"
+      ],
+      "commands": [
+        "editor.action.blockComment"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "z",
+        "z"
+      ],
+      "commands": [
+        "editor.toggleFold"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "n",
+        "l"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+  ],
+  "vim.statusBarColors.normal": [
+    "#8FBCBB"
+  ],
+  "vim.statusBarColors.insert": "#BF616A",
+  "vim.statusBarColors.visual": "#B48EAD",
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/*.pyc": true,
+    "**/.factorypath": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "cSpell.userWords": [
+    "chainable",
+    "Luban",
+    "prefetch",
+    "sider",
+    "stylelint",
+    "traefik"
+  ],
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "window.newWindowDimensions": "offset",
+  "security.workspace.trust.untrustedFiles": "open",
+  "vim.cursorStylePerMode.normal": "block",
+  "workbench.sideBar.location": "right",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.enabled": true,
+  "[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  },
+  "workbench.startupEditor": "none",
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "note",
+      "foreground": "#08979c",
+      "background": "#b5f5ec"
+    },
+    "FIXME": {
+      "icon": "issue-reopened",
+      "foreground": "#D94600",
+      "fontWeight": "700",
+      "background": "#faad14",
+      "rulerColour": "#faad14"
+    },
+    "debugger": {
+      "icon": "flame",
+      "foreground": "#f5222d",
+      "background": "#f4ffb8",
+      "type": "whole-line"
+    },
+    "deprecated": {
+      "icon": "eye-closed",
+      "foreground": "#d48806",
+      "background": "#ffe58f"
+    },
+    "BUG": {
+      "icon": "bug",
+      "foreground": "#820014",
+      "background": "#ffa39e"
+    },
+    "NOTE": {
+      "icon": "comment",
+      "foreground": "#003a8c",
+      "background": "#e6f7ff",
+      "rulerColour": "grey"
+    },
+    "REVIEW": {
+      "icon": "check",
+      "foreground": "green",
+      "background": "#dff",
+      "rulerColour": "grey"
+    },
+    "override": {
+      "icon": "check",
+      "foreground": "green",
+      "background": "#dff",
+      "rulerColour": "grey"
+    }
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "REPLACE",
+    "BUG",
+    "NOTE",
+    "REVIEW",
+    "deprecated",
+    "debugger",
+    "override",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.general.statusBar": "current file",
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules/**",
+    "**/test/**"
+  ],
+  "json.maxItemsComputed": 10000,
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.menuBarVisibility": "compact",
+  "eslint.debug": true,
+  "eslint.lintTask.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "editor.largeFileOptimizations": false,
+  "editor.foldingMaximumRegions": 65000,
+  "typescript.tsserver.maxTsServerMemory": 10240,
+  "typescript.tsserver.watchOptions": {
+    "watchFile": "fixedPollingInterval",
+    "watchDirectory": "fixedPollingInterval",
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "typescript.tsserver.log": "verbose",
+  "window.confirmBeforeClose": "keyboardOnly",
+  "Lua.workspace.library": [
+    // "/opt/homebrew/Cellar/neovim/0.9.1/share/nvim/runtime/lua",
+    // "/opt/homebrew/Cellar/neovim/0.9.1/share/nvim/runtime/lua/vim/lsp"
+  ],
+  "Lua.diagnostics.globals": [
+    "vim"
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "window.titleBarStyle": "native",
+  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 1,
+  "extensions.supportUntrustedWorkspaces": {
+    "byted-ide.dev-environment-manager": {
+      "supported": true
+    }
+  },
+  "explorer.confirmDragAndDrop": false
+}
+
