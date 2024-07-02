@@ -1,0 +1,104 @@
+"" Source your .vimrc
+source ~/.vimrc
+
+" set leader key
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+set hlsearch
+set incsearch
+set smartcase
+set ignorecase
+set de=on
+set nu
+set relativenumber
+set scrolloff=5
+set showmode
+set highlightedyank
+let g:highlightedyank_highlight_duration = "1000"
+let g:highlightedyank_highlight_color = "rgba(160, 160, 160, 155)"
+
+set visualbell
+
+" plugins
+set easymotion
+set surround
+set argtextobj
+set multiple-cursor
+set keep-english-in-normal-and-restore-in-insert
+
+nnoremap L $
+nnoremap dL d$
+nnoremap yL y$
+nnoremap cL c$
+vnoremap H ^
+nnoremap dH d^
+nnoremap yH y^
+nnoremap cH c^
+nnoremap H ^
+vnoremap L $
+
+nnoremap <C-j> 4j
+nnoremap <C-k> 4k
+nnoremap <C-u> 9j
+nnoremap <C-d> 9k
+
+" easymotion
+" map <leader>f <Plug>(easymotion-s)
+
+set exchange
+set highlightedyank
+set textobj-entire
+set keep-english-in-normal-and-restore-in-insert
+set NERDTree
+set ReplaceWithRegister
+
+" nerdtree
+map <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>d :NERDTreeFocus<CR>
+
+
+" clear the highlighted search result
+nnoremap <Leader>l :nohlsearch<CR>
+
+" code actions
+nnoremap cc :action CommentByLineComment<CR>
+nnoremap cb :action CommentByBlockComment<CR>
+" copy and paste
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>P "0p
+vnoremap Y "+y
+
+" Tab operation
+nnoremap <Leader>j gt
+nnoremap <Leader>k gT
+
+" edit vimrc
+nnoremap <Leader>ve :e ~/.ideavimrc<CR>
+nnoremap <Leader>vw :w!<CR>
+nnoremap <Leader>vs :source ~/.ideavimrc<CR>
+
+" collapse or expand code
+nnoremap <Leader>zz :action CollapseRegion<CR>
+nnoremap <Leader>ZZ :action ExpandRegion<CR>
+
+" jump to definition.
+nnoremap gh :action QuickJavaDoc<CR>
+" equivalent to hovering your mouse over wherever the cursor is. Handy for seeing types and error messages without reaching for the mouse!
+nnoremap gd :action GotoDeclaration<CR>
+" show error description
+nnoremap ge :action ShowErrorDescription<CR>
+
+
+" quit/close current window
+" nnoremap <Leader>q <C-W>w
+nnoremap <Leader>q :q<CR>
+
+nnoremap cc :action CommentByLineComment<CR>
+vnoremap gcc :action CommentByLineComment<CR>
+
+nnoremap <Leader>? :action GotoAction<CR>
+
+nnoremap <Leader>f :action ReformatCode<CR>
