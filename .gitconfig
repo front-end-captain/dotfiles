@@ -1,0 +1,14 @@
+[alias]
+	s = status
+	ci = commit
+	unstage = reset HEAD
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	p = pull
+	pr = pull --rebase
+	a = add -- .
+	c = commit -m
+	co = checkout
+[credential]
+	helper = store
+[core]
+	editor = nvim
