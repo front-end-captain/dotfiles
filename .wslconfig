@@ -1,0 +1,10 @@
+[wsl2]
+memory=14GB
+swap=0
+
+[experimental]
+autoMemoryReclaim=gradual  
+networkingMode=mirrored
+dnsTunneling=true
+firewall=true
+autoProxy=true
