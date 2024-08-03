@@ -1,3 +1,4 @@
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.4
 # ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 Import-Module posh-git
