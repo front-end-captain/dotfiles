@@ -44,6 +44,8 @@ scoop install main/python
 
 scoop install fzf
 Install-Module -Name PsFzf -Scope CurrentUser -Force
+
+scoop install fnm
 ```
 
 ## Install nerd fonts

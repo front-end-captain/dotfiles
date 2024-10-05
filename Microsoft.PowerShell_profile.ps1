@@ -64,5 +64,7 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\bubblesextra.omp.json" | In
 # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\gruvbox.omp.json" | Invoke-Expression
 # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\kushal.omp.json" | Invoke-Expression
 
+fnm env --use-on-cd | Out-String | Invoke-Expression
+
 # winfetch
 
