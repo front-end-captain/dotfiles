@@ -25,27 +25,15 @@ For advanced installation options, check out the [Installer's Readme](https://gi
 ### Install Prerequistites
 
 ```powershell
-scoop install main/glow
-scoop install main/ripgrep
-scoop install main/fd
-scoop install main/7zip
-scoop install main/gcc
 scoop install main/git
-scoop install main/lazygit
-scoop install main/lsd
-scoop install main/make
-scoop install main/neovim
-scoop install main/vim
-scoop install main/oh-my-posh
-scoop install main/win32yank
-scoop install main/winfetch
-scoop install main/unzip
-scoop install main/python
+scoop install main/glow main/ripgrep main/fd main/7zip main/gcc extras/lazygit main/lsd main/make main/neovim main/vim main/oh-my-posh main/win32yank main/winfetch main/unzip main/python fzf fnm
 
-scoop install fzf
 Install-Module -Name PsFzf -Scope CurrentUser -Force
+Install-Module -Name posh-git -Scope CurrentUser -Force -AllowClobber
+Install-Module -Name z -Scope CurrentUser -Force -SkipPublisherCheck -AllowClobber
+Install-Module -Name psreadLine -Scope CurrentUser -Force -SkipPublisherCheck -AllowClobber
+Install-module -Name Terminal-Icons -Scope CurrentUser -Force -SkipPublisherCheck -AllowClobber
 
-scoop install fnm
 ```
 
 ## Install nerd fonts
